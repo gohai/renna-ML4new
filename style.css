@@ -1,0 +1,109 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#comments-div{
+    /* display: flex; */
+    display: none;
+}
+
+.profile-img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+#bar{
+    width:100%;
+}
+
+#bar2{
+   color: blanchedalmond;
+    width:100%;
+    display:none;
+}
+
+#headbar{
+    width:100%;
+
+}
+#headbar2{
+    width:100%;
+}
+
+#file-select {
+    background-color: aqua;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    /* height: 25vh; */
+}
+
+#file-assets {
+    background-color: brown;
+    /* position: absolute; */
+    width: 30vw;
+    height: 30vw;
+
+    margin: auto;
+    
+    /* margin: auto; */
+}
+
+#file-input::-webkit-file-upload-button {
+    visibility:hidden;
+}
+
+#file-input {
+    /* background-color: rgb(42, 165, 140, ); */
+    position: absolute;
+    opacity: 0;
+
+    z-index: 1;
+
+    /* width: 100%;
+    height: 100%; */
+    width: 30vw;
+    height: 30vw;
+}
+
+#file-img {
+    position: absolute;
+
+    width: 30vw;
+    height: 30vw;
+}
+
+
+#comment-area {
+    background-color: blue;
+
+    /* padding-top: 2vh;
+    padding-bottom: 2vh; */
+    padding: 2vh;
+
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-text {
+    width: 100%;
+    height: 100%;
+}
+
+#submit-btn-wrapper {
+    background-color:blueviolet;
+
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-btn {
+    width: 80%;
+    height: 100%;
+}
+

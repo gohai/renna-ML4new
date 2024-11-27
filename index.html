@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>AI Feedback Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div id="wrapper">
+
+    <div id = "bar">
+        <img src="assets/bar.jpg" id="headbar">
+      </div>
+
+   <div id = "bar2">
+        <img src="assets/bar2.jpg" id="headbar2">
+
+      </div>
+  
+
+      <div>
+          <!--put new things -->
+      </div>
+  
+  
+      <!-- <div>
+          <input type="file" id="file-input" accept="assets/*">
+          <textarea name="input-text" id="input-text" rows="5"></textarea>
+      </div>
+      <div>
+          
+          <input type="button" value="Submit" id="submit">
+      </div> -->
+  
+      <div id="file-select">
+            <div id="file-assets">
+                <input type="file" id="file-input" accept="assets/*">
+                <img src="assets/camera.jpg" id="file-img">
+                <!-- image -->
+            </div>
+          
+      </div>
+      <div id="comment-area">
+          <textarea name="input-text" id="input-text" rows="5"></textarea>
+      </div>
+      <div id="submit-btn-wrapper">
+          <input type="button" value="Submit" id="submit-btn">
+      </div>
+  
+  
+      <div id = "comments-div">
+          <p>COMMENTS</p>
+      </div>
+   </div>
+    
+
+
+
+    
+  <script src="comment.js"></script>
+  <script src="post.js"></script>
+  <script src="openai.js"></script>
+
+  </body>
+</html>
