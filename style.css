@@ -5,12 +5,14 @@
 #comments-div{
     /* display: flex; */
     display: none;
+    margin: 2vh;
+
 }
 
 .profile-img{
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 #bar{
     width:100%;
@@ -22,6 +24,20 @@
     display:none;
 }
 
+#bar3{
+    color: blanchedalmond;
+     width:100%;
+     display:none;
+ }
+ #loadingdiv{
+     width:100%;
+     display:none;
+ }
+
+ #loading{
+width: 100%;
+ }
+ 
 #headbar{
     width:100%;
 
@@ -30,8 +46,12 @@
     width:100%;
 }
 
+#headbar3{
+    width:100%;
+}
+
 #file-select {
-    background-color: aqua;
+    /* background-color: aqua; */
     padding-top: 5vh;
     padding-bottom: 5vh;
     /* height: 25vh; */
@@ -42,7 +62,6 @@
     /* position: absolute; */
     width: 30vw;
     height: 30vw;
-
     margin: auto;
     
     /* margin: auto; */
@@ -74,8 +93,7 @@
 
 
 #comment-area {
-    background-color: blue;
-
+    /* background-color:red; */
     /* padding-top: 2vh;
     padding-bottom: 2vh; */
     padding: 2vh;
@@ -93,17 +111,37 @@
 }
 
 #submit-btn-wrapper {
-    background-color:blueviolet;
-
+    /* background-color:blueviolet; */
+   
     height: 5vh;
-
+    padding: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #submit-btn {
-    width: 80%;
+    width: 90%;
     height: 100%;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-family: "PingFang SC", "Noto Sans", sans-serif; 
+    border-radius: 15px; 
+    font-weight: bold;
+    cursor: pointer;
+    background-color:#3C9AFE
 }
 
+#input-text{
+    font-size: 30px; /* 设置字体大小为 16 像素 */
+    font-family: Arial, sans-serif; /* 设置字体 */
+}
+
+#comment-title{
+    text-align: center;
+    font-family: "PingFang SC", "Noto Sans", sans-serif; 
+    font-weight: bold;
+    font-size: 30px;
+    display:none;
+}

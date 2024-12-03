@@ -9,9 +9,9 @@ function setup() {
   // canvas.parent("#post");
   // background(0);
   // fill(255);
-
   select("#submit-btn").mouseClicked(submittedAction);
-    select("#file-input").elt.addEventListener('change', handleFileSelect);
+  select("#file-input").elt.addEventListener('change', handleFileSelect);
+  
 
 }
 function handleFileSelect(event) {
@@ -60,7 +60,8 @@ function gotResults(results) {
   console.log(commentArray)
 }
 
-// function draw() {
+ function draw() {
+  
 //  background(0);
 //   textSize(16);
 //   fill(255);
@@ -69,7 +70,7 @@ function gotResults(results) {
 //   if (uploadedImage) {
 //     image(uploadedImage, 10, 50, uploadedImage.width / 2, uploadedImage.height / 2);
 //   }
-// }
+ }
 
 function pushInputToArray(input) {
   let commentsArray = [];
@@ -83,6 +84,8 @@ function pushInputToArray(input) {
     console.log('Got invalid JSON back from GPT');
     return;
   }
-
   updateComments(commentsArray);
+  if (commentsArray.length > 0) {
+    displayAction();
+}
 }
