@@ -138,6 +138,10 @@ width: 100%;
     font-family: Arial, sans-serif; /* 设置字体 */
 }
 
+#comment-post-img {
+    width: 100%;
+}
+
 #comment-title{
     text-align: center;
     font-family: "PingFang SC", "Noto Sans", sans-serif; 

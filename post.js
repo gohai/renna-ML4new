@@ -18,7 +18,13 @@ function handleFileSelect(event) {
   let file = event.target.files[0];
   if (file && file.type.startsWith('image')) {
     // Load the selected image into p5.js
-    uploadedImage = loadImage(URL.createObjectURL(file));
+    //uploadedImage = loadImage(URL.createObjectURL(file));
+
+    // GH: we don't need to load the image for use in P5,
+    // as we aren't using the canvas - instead we can
+    // simply set the "src" of an <img> element like so
+    let objectUrl = URL.createObjectURL(file);
+    select("#comment-post-img").elt.src = objectUrl;
   }
 }
 
