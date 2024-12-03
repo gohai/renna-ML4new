@@ -2,6 +2,9 @@ let commentsDiv = document.getElementById("comments-div");
 let profileImages=[];
 
 function preload() {
+    // GH: this is not needed, as we only need to set the
+    // url as the <img> element source below (the browser
+    // takes care of the rest)
     for (let i = 0; i < 20; i++) {
         let url = "assets/p" + (i + 1) + ".jpg"; // Adjusted to load p1.jpg to p20.jpg
         let img = new Image();
@@ -24,7 +27,7 @@ function updateComments(response) {
         
         let img = document.createElement("img");
         img.className="profile-img";
-        img.src = profileImages[i+1];
+        img.src = "assets/p" + (i + 1) + ".jpg";
         imgDiv.appendChild(img);
 
         // div for texts (ID + Comment)
