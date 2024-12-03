@@ -24,6 +24,7 @@ function handleFileSelect(event) {
     // as we aren't using the canvas - instead we can
     // simply set the "src" of an <img> element like so
     let objectUrl = URL.createObjectURL(file);
+    select("#file-img").elt.src = objectUrl;
     select("#comment-post-img").elt.src = objectUrl;
   }
 }
